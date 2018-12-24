@@ -30,11 +30,11 @@
 		android:layout_height="fill_parent"
 		android:paddingTop="10dp">
 
-		<!--<ImageView-->
-			<!--android:layout_width="fill_parent"-->
-			<!--android:layout_height="fill_parent"-->
-			<!--android:src="@drawable/green_background"-->
-			<!--android:alpha="0.6"/>-->
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:src="@drawable/green_background3"
+			android:alpha="0.6"/>
 		<ImageView
 			android:id="@+id/imageview_sweep"
 			android:layout_width="153dp"
