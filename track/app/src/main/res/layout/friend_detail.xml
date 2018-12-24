@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout android:id="@+id/vgp_friend_detail_header"
+		android:background="@drawable/friends_list_header"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:paddingLeft="10px" android:paddingRight="10px"
+		android:paddingTop="8px">
+
+		<Button android:id="@+id/btn_friends_list"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/button_friends_list_def"
+			android:layout_alignParentLeft="true" />
+
+		<ToggleButton android:id="@+id/btn_friends_list_edit"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/button_friends_list_edit_def"
+			android:layout_alignParentRight="true" android:textOff=""
+			android:textOn="" />
+
+	</RelativeLayout>
+
+	<RelativeLayout android:id="@+id/vgp_friend_detail" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/friends_list_item_background"
+		android:paddingTop="10px" android:paddingRight="10px"
+
+		android:paddingLeft="40px" android:layout_below="@id/vgp_friend_detail_header">
+
+		<TextView android:id="@+id/txt_friend_name"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:textColor="#39b54a"
+			android:text="zhen"
+			android:paddingTop="3dp" android:paddingLeft="40dp" android:textSize="18dp" />
+
+		<Button android:id="@+id/btn_delete" android:layout_width="40dp"
+			android:layout_height="40dp" android:background="@drawable/button_list_delete_def"
+			android:layout_alignParentRight="true" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/vgp_friend_detail"
+		android:layout_marginTop="0dp"
+		android:background="@drawable/friend_detail_centre_background"
+		android:paddingTop="10dp"
+		android:paddingRight="10dp"
+		android:paddingBottom="10dp">
+
+		<TextView
+			android:id="@+id/txt_friend_number"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="32dp"
+			android:text="dsadasdsa"
+			android:textColor="@android:color/white"
+			android:textSize="16dp" />
+
+		<TextView
+			android:id="@+id/txt_friend_long_lang"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/txt_friend_number"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="1dp"
+			android:layout_marginBottom="32dp"
+			android:text="22.2630N/113.541320E"
+			android:textColor="@android:color/white"
+			android:textSize="15dp" />
+
+		<TextView
+			android:id="@+id/txt_friend_altitude"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/txt_friend_long_lang"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="16dp"
+			android:layout_marginBottom="40dp"
+			android:text="66.6m"
+			android:textColor="@android:color/white"
+			android:textSize="18dp" />
+
+		<TextView
+			android:id="@+id/txt_friend_accuracy"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/txt_friend_altitude"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="1dp"
+			android:layout_marginBottom="32dp"
+			android:text="6m"
+			android:textColor="@android:color/white"
+			android:textSize="18dp" />
+
+		<TextView
+			android:id="@+id/txt_friend_nearest_city"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/txt_friend_accuracy"
+			android:layout_alignParentRight="true"
+			android:layout_marginBottom="11dp"
+			android:text="Jinan University"
+			android:textColor="@android:color/white"
+			android:textSize="15dp" />
+
+		<TextView
+			android:id="@+id/txt_friend_secs_last_update"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/txt_friend_nearest_city"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="30dp"
+			android:layout_marginBottom="32dp"
+			android:text="2''333"
+			android:textColor="@android:color/white"
+			android:textSize="15dp" />
+
+		<TextView
+			android:id="@+id/txt_friend_secs_next_update"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/txt_friend_secs_last_update"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="32dp"
+			android:text="6''666"
+			android:textColor="@android:color/white"
+			android:textSize="15dp" />
+	</RelativeLayout>
+
+	<RelativeLayout android:id="@+id/vgp_footer"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/list_footer" android:layout_alignParentBottom="true">
+
+		<Button android:id="@+id/btn_radar" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/button_radar_def"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+
+		<Button android:id="@+id/btn_enemies" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/button_enemies_def"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+
+	</RelativeLayout>
+
+</RelativeLayout>
